@@ -1,0 +1,144 @@
+:root {
+    --main: rgb(0, 0, 0);
+    --scnd: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--main);
+    color: var(--scnd);
+    text-align: center;
+}
+
+#navbar {
+    background-color: var(--scnd);
+    padding: 30px;
+    /* padding-left: 25px; */
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    position: relative;
+    filter: invert();
+    border-bottom: 2px var(--main) solid;
+}
+
+#imgContainer {
+    width: 110px;
+    height: 110px;
+    background-image: url("logo_hlb.png");
+    background-size: cover;
+    position: relative;
+}
+
+#navbar h1 {
+    margin: 0 auto;
+    color: var(--main);
+    font-size: 65px;
+    position: absolute;
+    top: 50%;
+    translate: 25% -50%;
+}
+
+#player {
+    width: 100%;
+    background-color: var(--main);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+#player #loops {
+    grid-column: 1/2;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#loops .loopBtn {
+    background-color: var(--main);
+    border: 2px solid white;
+    color: var(--scnd);
+    font-size: 35px;
+    font-weight: bold;
+    height: 175px;
+}
+
+#player #controls {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    align-content: space-around;
+}
+
+#controls .playerCtrl {
+    background-color: var(--main);
+    color: var(--scnd);
+    width: 175px;
+    height: 175px;
+    border: 4px solid white;
+    margin: 0;
+    background-size: cover;
+}
+
+.playerCtrl:nth-child(1) {
+    background-image: url("play.png");
+}
+
+.playerCtrl:nth-child(2) {
+    background-image: url("canc.png");
+}
+
+#soundboard {
+    margin: 0 auto;
+    padding: 50px;
+    border-bottom: 2px var(--scnd) solid;
+    margin-bottom: 40px;
+}
+
+.soundBtn {
+    border: 5px white solid;
+    background-color: var(--main);
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.soundBtn:active {
+    filter: invert();
+}
+
+.soundBtn:nth-of-type(1) {
+    background-image: url("img0.png");
+    background-size: cover;
+}
+
+.soundBtn:nth-of-type(2) {
+    background-image: url("img1.png");
+    background-size: cover;
+}
+
+.soundBtn:nth-of-type(3) {
+    background-image: url("img2.png");
+    background-size: cover;
+}
+
+.soundBtn:nth-of-type(4) {
+    background-image: url("img3.png");
+    background-size: cover;
+}
+
+.soundBtn:nth-of-type(5) {
+    background-image: url("img4.png");
+    background-size: cover;
+}
+
+.soundBtn:nth-of-type(6) {
+    background-image: url("img5.png");
+    background-size: cover;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer="true"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo_hlb.png">
+    <title>Halloween Laebactes</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="imgContainer"></div>
+        <h1>Halloween Laebactes</h1>
+    </div>
+    <div id="soundboard">
+        <button class="soundBtn" onclick="playSFX(0)"></button>
+        <button class="soundBtn" onclick="playSFX(1)"></button>
+        <button class="soundBtn" onclick="playSFX(2)"></button>
+        <button class="soundBtn" onclick="playSFX(3)"></button>
+        <button class="soundBtn" onclick="playSFX(4)"></button>
+        <button class="soundBtn" onclick="playSFX(5)"></button>
+    </div>
+    <div id="player">
+        <div id="loops">
+            <button class="loopBtn" onclick="selectLPS(0)">Music Box</button>
+            <button class="loopBtn" onclick="selectLPS(1)">Cascata</button>
+            <button class="loopBtn" onclick="selectLPS(2)">Vento</button>
+            <button class="loopBtn" onclick="selectLPS(3)">Bosco</button>
+            <button class="loopBtn" onclick="selectLPS(4)">Miniera</button>
+            <button class="loopBtn" onclick="selectLPS(5)">???</button>
+        </div>
+        <div id="controls">
+            <button class="playerCtrl" onclick="ctrlSound(0)" id="start"></button>
+            <button class="playerCtrl" onclick="ctrlSound(1)" id="replay"></button>
+        </div>
+    </div>
+</body>
+</html>
