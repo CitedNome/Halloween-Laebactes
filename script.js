@@ -4,7 +4,7 @@ const lps = [document.createElement("audio"), document.createElement("audio"), d
 var cur_lps = undefined;
 
 function playSFX(sfxId) {
-    sfx[sfxId].src = `sound${sfxId}.mp3`;
+    sfx[sfxId].src = `audio/sound${sfxId}.mp3`;
     sfx[sfxId].play();
     return console.log(sfxId);
 };
@@ -23,7 +23,7 @@ function selectLPS(loopId) {
 
 function ctrlSound(ctrlId) {
     if (ctrlId == 0) { //Start
-        lps[cur_lps].src = `loop${cur_lps}.mp3`;
+        lps[cur_lps].src = `audio/loop${cur_lps}.mp3`;
         lps[cur_lps].play()
     }
     else {
