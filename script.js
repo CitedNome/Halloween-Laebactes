@@ -25,7 +25,7 @@ function selectLPS(loopId) {
     }
     cur_lps = loopId;
     // console.log(loopId);
-    return document.getElementsByClassName("loopBtn")[loopId].style.borderColor = "rgb(0, 255, 0)";
+    return document.getElementsByClassName("loopBtn")[loopId].style.borderColor = "var(--thrd)";
 };
 
 function ctrlSound(ctrlId) {
@@ -45,6 +45,6 @@ function ctrlSound(ctrlId) {
 function clearCB() {
 var cBtns = document.getElementsByClassName("loopBtn");
     for (let cBtn in cBtns) {
-        cBtns[cBtn].style.borderColor = "white"
+        cBtns[cBtn].style.borderColor = "var(--scnd)"
     }
 };
