@@ -131,14 +131,16 @@ body {
 .soundBtn:nth-of-type(4) {
     background-image: url("imgs/img3.png");
     background-size: cover;
+    visibility: hidden;
 }
 
 .soundBtn:nth-of-type(5) {
-    background-image: url("imgs/img4.png");
+    background-image: url("imgs/canc.png");
     background-size: cover;
 }
 
 .soundBtn:nth-of-type(6) {
     background-image: url("imgs/img5.png");
     background-size: cover;
+    visibility: hidden;
 }

@@ -9,6 +9,13 @@ function playSFX(sfxId) {
     return console.log(sfxId);
 };
 
+function cancSFX() {
+    for (let sfx_i in sfx) {
+        sfx[sfx_i].pause();
+        sfx[sfx_i].load()
+    }
+}
+
 function selectLPS(loopId) {
     lps[loopId].loop = "true";
     try {
